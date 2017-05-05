@@ -1,0 +1,174 @@
+body *{
+	margin:0;
+	padding: 0;
+	font-family: sans-serif, serif;
+	font-size: 12px;
+}
+select, input {
+	outline:none;
+}
+input {
+	width: 40px;
+}
+.thresholdsTable {
+	display: table;
+	position:relative;
+	left:0;
+	top:0;
+	min-width:672px;
+	border-collapse: collapse;
+}
+.thresholdsTbody {
+	display: table-row-group;
+}
+.addThresholdRow {
+	height: 36px;
+}
+.thresholdsHeadRow,
+.addThresholdRow,
+.thresholdsRow {
+	display: table-row;
+	vertical-align: top;
+}
+.thresholdsCell {
+	display: table-cell;
+	padding: 3px 5px;
+	border-right: 1px dotted #ccc;
+}
+.thresholdsCell.selectCell {
+	position:relative;
+	width:76px;
+}
+.thresholdsCell em {
+	color:#777777;font-weight:bold;
+}
+.thresholdsHeadRow .thresholdsCell {
+	text-align: left;
+	padding: 1px 5px;
+	color: #333;
+}
+.noCellBorder {
+	border: none;
+}
+.addThresholdOutter {
+	position: absolute;
+	top: 22px;
+	z-index: 100;
+	left: 0;
+	right: 10px;
+}
+.addThresholdOutter input{
+	width: 100%;
+	padding: 3px 3px 3px 5px;
+	border: 1px solid #ccc;
+	font-style: italic;
+}
+.addThresholdOutter input,
+.thresholdsRow.editing{
+	background-color: #daeff6;
+}
+.thresholdsRow {
+	background-color: #ffffff;
+}
+.thresholdsRow select,
+.thresholdsRow input {
+	padding:3px;
+	border: none;
+	border-bottom: 1px dotted #aaa;
+	margin:1px 3px;
+	background-color: #ffffff;
+}
+.thresholdsRow select:focus,
+.thresholdsRow input:focus,
+.thresholdsRow.editing select:focus,
+.thresholdsRow.editing input:focus {
+	background-color: #ffffff;
+}
+.thresholdsRow.editing select,
+.thresholdsRow.editing input {
+	background-color: #daeff6;
+}
+.thresholdsRow .delete{
+	visibility:hidden;
+}
+.thresholdsRow.editing .delete{
+	visibility:visible;
+}
+.thresholdsRow .delete:hover{
+	cursor:pointer;
+}
+.thresholdsRow select.allDay {
+	position: absolute;
+	top:2px;
+	left:0;
+	z-index: 2;
+	width: 156px;
+}
+.warningSec span, .errorSec span, .criticalSec span {
+	display:inline-block;
+	width: 104px;
+	padding:2px;
+	border-radius: 2px;
+}
+.warningSec span{
+	color: #777777;
+	background: #ffcc00;
+}
+.errorSec span{
+	color: #ffffff;
+	background: #f26522;
+}
+.criticalSec span{
+	color: #ffffff;
+	background: #ed1e24;
+}
+.timeChartOuter {
+	display:table;
+	width:100%;
+	height:58px;
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:-90px;
+	border-collapse:collapse;
+}
+.timeChartInner {
+	display:table-row;
+	vertical-align:top;
+}
+.timeChartTime {
+	display:table-cell;
+	padding:0 4px;
+	border-right:1px solid #ccc;
+	text-align:right;
+}
+.timeChartAllTimeBar {
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:-72px;
+	height:18px;
+	background:#efefef;    
+}
+.timeChartTimeBarLeft {
+	position:absolute;
+	left:0;
+	bottom:-80px;
+	height:32px;
+}
+.timeChartTimeBarRight {
+	position:absolute;
+	right:0;
+	bottom:-80px;
+	height:32px;    
+}
+.saveBtn {
+	position:absolute;
+	right:0;
+	bottom:-180px;
+	padding:5px 10px;
+	background:#602372;
+	color:#ffffff;
+	border-radius:3px;
+	cursor: pointer;				
+}
